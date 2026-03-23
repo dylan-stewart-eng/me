@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(curl -s \"https://api.github.com/repos/nextlevelbuilder/ui-ux-pro-max-skill/contents/.claude/skills/ui-ux-pro-max\")",
+      "Bash(curl -s \"https://api.github.com/repos/nextlevelbuilder/ui-ux-pro-max-skill/contents/src/ui-ux-pro-max/scripts\")",
+      "Bash(python3 -c \"import sys,json; files=json.load\\(sys.stdin\\); [print\\(f[''''name''''], f[''''type''''], f.get\\(''''download_url'''',''''''''\\)\\) for f in files]\")",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack --yes)",
+      "Bash(where node:*)",
+      "Bash(where npm:*)",
+      "Bash(echo \"PATH: $PATH\")",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/dylan/AppData/Roaming/**)",
+      "Read(//c/Users/dylan/AppData/Local/Programs/**)",
+      "Bash(cmd /c \"node --version 2>&1 & npm --version 2>&1\")",
+      "Bash(powershell -Command \"Get-Command node -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source; Get-Command npm -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source\")",
+      "Bash(powershell -Command \"node --version\")",
+      "Bash(powershell -Command \"npm --version\")",
+      "Bash(npm --version)",
+      "Bash(export PATH=\"$PATH:/c/Program Files/nodejs\")",
+      "Read(//c/Users/dylan/**)",
+      "Bash(npx create-next-app@latest portfolio-site --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack --yes)",
+      "Bash(npm run:*)"
+    ]
+  }
+}
